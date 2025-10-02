@@ -53,3 +53,21 @@ public:
         for (int val : heap) {
             std::cout << val << " ";
         }
+std::cout << std::endl;
+    }
+};
+
+// # Пример использования
+int main() {
+    BinaryHeap heap;
+    heap.insert(10);
+    heap.insert(5);
+    heap.insert(15);
+    heap.insert(3);
+    heap.insert(7);
+    
+    heap.printHeap(); // # Вывод: Heap: 3 5 15 10 7
+    std::cout << "Min element: " << heap.getMin() << std::endl; // # Вывод: Min element: 3
+    
+    return 0;
+}
